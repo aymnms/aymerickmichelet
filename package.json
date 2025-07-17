@@ -1,17 +1,6 @@
 {
-    "title": "Personal",
     "name": "startbootstrap-personal",
     "version": "1.0.1",
-    "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
     "description": "A personal website template built with Bootstrap",
     "keywords": [
         "css",
@@ -26,17 +15,33 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-personal/issues",
         "email": "feedback@startbootstrap.com"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/StartBootstrap/startbootstrap-personal.git"
+    },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        {
+            "name": "David Miller",
+            "url": "https://davidmiller.io/"
+        }
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-personal.git"
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "emailjs-com": "^3.2.0"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
@@ -47,7 +52,8 @@
         "prettier": "2.8.6",
         "pug": "3.0.2",
         "sass": "1.60.0",
-        "shelljs": "0.8.5",
+        "shelljs": "^0.8.5",
         "upath": "2.0.1"
-    }
+    },
+    "title": "Personal"
 }

@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Personal - Start Bootstrap Theme
+        title Aymerick MICHELET
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -30,13 +30,21 @@ html(lang='en')
                             // Header text content
                             .text-center.text-xxl-start
                                 .badge.bg-gradient-primary-to-secondary.text-white.mb-4
-                                    .text-uppercase Design &middot; Development &middot; Marketing
-                                .fs-3.fw-light.text-muted I can help your business to
+                                    .text-uppercase Freelance &middot; Développeur full stack &middot; Consultant
+                                .fs-3.fw-light.text-muted Je peux vous aider à
                                 h1.display-3.fw-bolder.mb-5
-                                    span.text-gradient.d-inline Get online and grow fast
-                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
+                                    span.text-gradient.d-inline Imaginer, développer et mettre en place vos solutions informatiques
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-4
                                     a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Resume
-                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
+                                .div.d-flex.justify-content-center.justify-content-xxl-start.fs-2.gap-4
+                                    a.text-gradient(href="https://www.linkedin.com/in/aymerickmichelet") 
+                                        i.bi.bi-linkedin
+                                    a.text-gradient(href="https://github.com/aymnms")
+                                        i.bi.bi-github
+                                    a.text-gradient(href="mailto:contact@aymerickmichelet.fr")
+                                        i.bi.bi-envelope
+                                    a.text-gradient(href="tel:+33781356685")
+                                        i.bi.bi-telephone
                         .col-xxl-7
                             // Header profile picture
                             .d-flex.justify-content-center.mt-5.mt-xxl-0
@@ -54,22 +62,102 @@ html(lang='en')
                                         include includes/svg-dots.pug
 
             // About Section
-            section.bg-light.py-5
+            section.bg-light.py-5#about
                 .container.px-5
                     .row.gx-5.justify-content-center
                         .col-xxl-8
                             .text-center.my-5
                                 h2.display-5.fw-bolder
-                                    span.text-gradient.d-inline About Me
-                                p.lead.fw-light.mb-4 My name is Start Bootstrap and I help brands grow.
-                                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?
-                                .d-flex.justify-content-center.fs-2.gap-4
-                                    a.text-gradient(href="#!") 
-                                        i.bi.bi-twitter
-                                    a.text-gradient(href="#!") 
-                                        i.bi.bi-linkedin
-                                    a.text-gradient(href="#!") 
-                                        i.bi.bi-github
+                                    span.text-gradient.d-inline A propos de moi
+                                p.lead.fw-light.mb-4 Je m'appelle Aymerick, j'ai 25 ans et je suis développeur full stack spécialisé en C.
+                                p.text-muted En freelance depuis 2025, je suis là pour vous aider. Que ca soit pour compléter vos équipes de développement déjà existantes ou pour vous accompagner dans la réalisation de vos projets en informatique. N'hésitez pas à me contacter pour discuter de vos projets !
+
+            // Page content
+            section.bg.py-5#contact
+
+                .container.px-5
+
+                    // Contact form
+                    .bg.rounded-4.py-5.px-4.px-md-5
+                        .text-center.mb-5
+                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
+                                i.bi.bi-envelope
+                            h1.fw-bolder Contactez-moi
+                            p.lead.fw-normal.text-muted.mb-0 Posez moi vos questions !
+                        .row.gx-5.justify-content-center
+                            .col-lg-8.col-xl-6
+
+                                // * * * * * * * * * * * * * * *
+                                // * * SB Forms Contact Form * *
+                                // * * * * * * * * * * * * * * *
+                                
+                                form#contactForm
+
+                                    // Name input
+                                    .form-floating.mb-3
+                                        input#name.form-control(
+                                            type='text',
+                                            name='name',
+                                            placeholder='Entrez votre nom et prénom...'
+                                            required
+                                        )
+                                        label(for='name') Nom et prénom
+                                        .invalid-feedback(data-sb-feedback='name:required')
+                                            | Un nom / prénom est requis
+                                    
+                                    // Email address input
+                                    .form-floating.mb-3
+                                        input#email.form-control(
+                                            type='email',
+                                            name='email',
+                                            placeholder='name@example.com'
+                                            required
+                                        )
+                                        label(for='email') Adresse email
+                                        .invalid-feedback(data-sb-feedback='email:required')
+                                            | Une adresse mail est requise
+                                        .invalid-feedback(data-sb-feedback='email:email')
+                                            | L'adresse email n'est pas valide
+                                    
+                                    // Phone number input
+                                    .form-floating.mb-3
+                                        input#phone.form-control(
+                                            type='tel',
+                                            name='phone',
+                                            placeholder='(123) 456-7890'
+                                            required
+                                        )
+                                        label(for='phone') Numéro de téléphone
+                                        .invalid-feedback(data-sb-feedback='phone:required')
+                                            | Un numéro de téléphone est requis
+                                    
+                                    // Message input
+                                    .form-floating.mb-3
+                                        textarea#message.form-control(
+                                            type='text',
+                                            name='message',
+                                            placeholder='Enter your message here...',
+                                            style='height: 10rem;'
+                                            required
+                                        )
+                                        label(for='message') Message
+                                        .invalid-feedback(data-sb-feedback='message:required')
+                                            | Un message est requis
+
+                                    // Submit success message
+                                    #submitSuccessMessage.d-none
+                                        .text-center.mb-3
+                                            .fw-bolder Le mail a été envoyé !
+
+                                    // Submit error message
+                                    #submitErrorMessage.d-none
+                                        .text-center.text-danger.mb-3 Une erreur est survenue lors de l'envoi du mail !
+
+                                    // Submit Button
+                                    .d-grid
+                                        button.btn.btn-primary.btn-lg(type='submit' disabled) Envoyer
+
+
 
         // Footer
         include includes/footer.pug
