@@ -3,10 +3,16 @@
 // Override Bootstrap Colors
 $blue: #1e30f3;
 $pink: #e21e80;
+$dark-blue: #1a237e;      // Bleu foncé
+$light-blue: #42a5f5;    // Bleu clair
+$accent: #7c4dff;       // Violet
+$background: #f5f5f5;   // Gris très clair
+$text: #222831;         // Presque noir
+
 
 // Redefine Bootstrap State Colors
-$primary: $blue;
-$secondary: $pink;
+$primary: $dark-blue;
+$secondary: $light-blue;
 
 // Bootstrap Variable Functions
 $enable-negative-margins: true;
