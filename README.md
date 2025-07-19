@@ -1,4 +1,4 @@
-# Aymerick MICHELET - Portfolio Personnel
+# Portfolio Personnel
 
 Site web personnel d'Aymerick Michelet.
 
@@ -53,12 +53,6 @@ src/
 ## Déploiement
 
 Le site est automatiquement déployé via GitHub Actions à chaque push sur la branche `main`.
-
-## Contact
-
-- **Email** : contact@aymerickmichelet.fr
-- **LinkedIn** : [Aymerick Michelet](https://www.linkedin.com/in/aymerickmichelet)
-- **GitHub** : [aymnms](https://github.com/aymnms)
 
 ## Licence
 
