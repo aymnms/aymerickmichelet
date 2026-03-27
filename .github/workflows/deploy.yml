@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and 
 
 on:
   push:
@@ -49,3 +49,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist 
+        cname: aymerickmichelet.fr
